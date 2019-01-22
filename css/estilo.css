@@ -1,0 +1,108 @@
+/*--- Sticky footer ---*/
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	font-family: Sarabun; /*Aquí se cambia la fuente predeterminada por una de mi eleción*/
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+/*--- Estilos generales ---*/
+
+h3, h4, h5, h6{
+	font-weight: bold;
+}
+
+.container{
+	margin-top: 40px;
+}
+
+.titulo{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+p{
+	text-align: justify;
+}
+
+main .container .row > .col{
+	margin-bottom: 20px;
+}
+
+/*--- Logotipos ---*/
+.brand-logo{
+	height: 40px;
+	margin-top: 12px;
+}
+
+.sidenav-logo{
+	height: 50px;
+	margin-top: 20px;
+}
+
+.logo-footer{
+	height: 20px;
+	vertical-align: bottom;
+}
+
+/*--- Navba ---*/
+.hide-on-med-and-down > li:hover{
+	background-color: #38C686;
+}
+
+/*--- Footer ---*/
+.redes:hover{
+	opacity: .7;
+}
+
+.material-icons{
+	vertical-align: bottom;
+	margin-right: 10px;
+}
+
+/*--- Animación ---*/
+
+.icono-presentacion{
+	/*nombre de la animación*/
+	animation-name: giro;
+	/*Cuanto tarda la animación*/
+	animation-duration: 1s;
+	/*Retardo de la animación*/
+	animation-delay: 0.5s;
+	/*Cuantas veces se va a repetir*/
+	animation-iteration-count: 1;
+	/*Forwards: se queda con la figura final (100%)*/
+	animation-fill-mode: forwards;
+}
+
+@keyframes giro{
+	from{
+		transform: rotate(0grad);
+	} to{
+		transform: rotate(400grad);
+	}
+}
+
+@keyframes destello{
+	0%{
+		background: red;
+	}
+
+	25%{
+		background: purple;
+		width: 50px;
+	}
+
+	50%{
+		background: pink;
+		transform: translateX(250px);
+	}
+	
+	100%{
+		background: red;
+	}
+}
