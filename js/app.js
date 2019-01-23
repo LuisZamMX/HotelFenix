@@ -17,3 +17,13 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.materialboxed').materialbox();
   });
+
+//datepicker
+$(document).ready(function(){
+    $('.datepicker').datepicker();
+  });
+
+//select
+$(document).ready(function(){
+    $('select').formSelect();
+  });
