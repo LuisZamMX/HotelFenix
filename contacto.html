@@ -26,33 +26,93 @@
 		<!-- Navbar -->
 		<nav>
 			<div class="nav-wrapper grey darken-4">
-				<a href="#"><img class="brand-logo" src="img/logo-blanco.png" alt="hotel-fenix-logo"></a>
+				<a href="index.html"><img class="brand-logo" src="img/logo-blanco.png" alt="hotel-fenix-logo"></a>
 				<a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 				<ul class="right hide-on-med-and-down">
-					<li class="waves-effect"><a href="#">Inicio</a></li>
+					<li class="waves-effect"><a href="index.html">Inicio</a></li>
 					<li class="waves-effect"><a href="reservaciones.html">Reservaciones</a></li>
 					<li class="waves-effect"><a href="restaurante.html">Restaurante & bar</a></li>
 					<li class="waves-effect"><a href="galeria.html">Galería</a></li>
-					<li class="waves-effect"><a href="contacto.html">Contacto</a></li>
+					<li class="waves-effect"><a href="#">Contacto</a></li>
 				</ul>
 			</div>
 		</nav>
 
 		<!-- Lista para dispositivos móviles -->
 		<ul class="sidenav" id="mobile-demo">
-			<a href="#"><img class="sidenav-logo" src="img/logo.png" alt="hotel-fenix-logo"></a>
-			<li><a href="#">Inicio</a></li>
+			<a href="index.html"><img class="sidenav-logo" src="img/logo.png" alt="hotel-fenix-logo"></a>
+			<li><a href="index.html">Inicio</a></li>
 			<li><a href="reservaciones.html">Reservaciones</a></li>
 			<li><a href="restaurante.html">Restaurante & bar</a></li>
 			<li><a href="galeria.html">Galería</a></li>
-			<li><a href="contacto.html">Contacto</a></li>
+			<li><a href="#">Contacto</a></li>
 		</ul>
 		
 	</header> 
 
 	<!-- Main -->
 	<main>
-		
+		<div class="container">
+
+			<!-- Mapa -->
+			<div class="row">
+
+				<div class="col s12 m8">
+					<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6552.828011565514!2d-86.81786046480488!3d21.17694782373044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b8a12dc8781%3A0x87336bdb86d0339f!2sMexicoHoteles.com.mx+-+Viajes+y+Vacaciones!5e0!3m2!1ses-419!2smx!4v1548197396525" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+
+				<div class="col s12 m4">
+					<h5>Hotel Fénix</h5>
+					<p>Av. Jose Lopez Portillo 339 Mza 63 Lote 1 penthouse 4, Sm 64, 64, 77500 Cancún, Q.R.</p><br>
+					<h6>Telefono de servicio al cliente</h6>
+					<i class="material-icons">phone</i><a href="tel:01(800)12345678">01 (800) 123-45678</a>
+
+				</div>
+
+			</div>
+
+			<!-- Formulario -->
+			<form class="col s12">
+				<br>
+				<div id="form-contacto" class="card-panel">
+
+					<div class="row">
+						<h4 class="center-align">Contáctenos</h4>
+						<p class="center-align">Póngase en contacto con nosotros vía correo electrónico.</p>
+					</div>
+
+					<div class="row">
+						<div class="input-field col s12">
+							<i class="material-icons prefix">account_circle</i>
+							<input id="icon_prefix" type="text" class="validate" required>
+							<label for="icon_prefix">Nombre</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="input-field col s12">
+							<i class="material-icons prefix">email</i>
+							<input id="icon_prefix" type="email" class="validate" required>
+							<label for="icon_prefix">Correo electrónico</label>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="input-field col s12">
+							<i class="material-icons prefix">mode_edit</i>
+							<textarea id="icon_prefix2" class="materialize-textarea validate" required></textarea>
+							<label for="icon_prefix2">Mensaje</label>
+						</div>  
+					</div>
+
+					<button id="submit-btn" class="btn waves-effect waves-light" type="submit" name="action">Enviar
+						<i class="material-icons right">send</i>
+					</button>
+
+
+				</div>
+			</form>
+		</div>
 	</main>
 
 	<!-- Comienza el footer -->
@@ -69,7 +129,7 @@
 						</center>
 					</div>
 					<div class="col s12 l8">
-						<h6 class="white-text center-align">Contáctanos</h6><br>
+						<h6 class="white-text center-align">Contáctenos</h6><br>
 						<div class="col s12 l6">
 							<center><i class="material-icons">phone</i><a href="tel:01(800)12345678">01 (800) 123-45678</a></center>
 						</div>
