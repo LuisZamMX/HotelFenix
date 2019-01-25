@@ -1,29 +1,34 @@
 //nav
 $(document).ready(function(){
-    $('.sidenav').sidenav();
-  });
+	$('.sidenav').sidenav();
+});
 
 //Slider
 $(document).ready(function(){
-    $('.slider').slider();
-  });
+	$('.slider').slider();
+});
 
 //parallax
 $(document).ready(function(){
-    $('.parallax').parallax();
-  });
+	$('.parallax').parallax();
+});
 
 //materialbox galeria
 $(document).ready(function(){
-    $('.materialboxed').materialbox();
-  });
+	$('.materialboxed').materialbox();
+});
 
 //datepicker
 $(document).ready(function(){
-    $('.datepicker').datepicker();
-  });
+	$('.datepicker').datepicker();
+});
 
 //select
 $(document).ready(function(){
-    $('select').formSelect();
-  });
+	$('select').formSelect();
+});
+
+//modal
+$(document).ready(function(){
+	$('.modal').modal();
+});
